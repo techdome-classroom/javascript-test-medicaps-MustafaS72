@@ -1,8 +1,6 @@
 function smallestMissingPositiveInteger(nums) {
   // Filter out negative numbers and zeros
   nums = nums.filter(num => num > 0);
-
-  // If no positive numbers found, return 1
   if (nums.length === 0) return 1;
 
   // Creating set of positive integers
