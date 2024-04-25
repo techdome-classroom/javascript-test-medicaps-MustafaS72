@@ -4,7 +4,6 @@ function smallestMissingPositiveInteger(nums) {
 
     const numSet = new Set(positiveNums);
 
-    // Start from 1 and check if it exists in the set
     for (let i = 1; i <= positiveNums.length + 1; i++) {
         if (!numSet.has(i)) {
             return i;
