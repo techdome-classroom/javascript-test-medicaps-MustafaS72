@@ -1,8 +1,8 @@
 function smallestMissingPositiveInteger(nums) {
 
-  const positiveNums = nums.filter(num => num > 0);
+  const posNos = nums.filter(num => num > 0);
 
-    const numSet = new Set(positiveNums);
+    const numSet = new Set(posNos);
 
     for (let i = 1; i <= positiveNums.length + 1; i++) {
         if (!numSet.has(i)) {
