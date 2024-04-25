@@ -8,7 +8,7 @@ function longestSubstring(s) {
         if (charInxMap[currentChar] >= start) {
             start = charInxMap[currentChar] + 1;
         }
-        charIndexMap[currentChar] = i;
+        charInxMap[currentChar] = i;
         const currentLength = i - start + 1;
         maxLength = Math.max(maxLength, currentLength);
     }
