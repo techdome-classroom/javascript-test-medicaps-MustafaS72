@@ -1,6 +1,6 @@
 function smallestMissingPositiveInteger(nums) {
 
-  const posNos = nums.filter(num => num > 0);//Filtering out -ve Nos ans 0
+  const posNos = nums.filter(num => num > 0);//Filtering the -ve Nos ans 0
 
     const numSet = new Set(posNos);
 
