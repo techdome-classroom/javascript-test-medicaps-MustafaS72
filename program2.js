@@ -5,7 +5,7 @@ function smallestMissingPositiveInteger(nums) {
   // If no positive numbers found, return 1
   if (nums.length === 0) return 1;
 
-  // Create a set to store positive integers
+  // Creating set to store positive integers
   const numSet = new Set(nums);
 
   // Iterate from 1 until we find the smallest missing positive integer
